@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+/* Navigation Bar Styling */
+.navbar {
+    width: 100%; /* Spanning the entire width of its parent */
+    background-color: #6e072d; /* Background color */
+    display: flex;
+    justify-content: space-between; /* Space between the left and right lists */
+    color: white; /* Font color */
+    font-size: 18px; /* Font size */
+}
+
+/* Styling for the unordered lists */
+.nav-left, .nav-right {
+    display: flex;
+    list-style: none; /* Removing default bullet points */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+}
+
+/* Styling for the individual list items */
+.nav-left li, .nav-right li {
+    padding: 18px 27px; /* Vertical padding = font size, Horizontal padding = 1.5 * font size */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    border-right: 2px solid white; /* Right border */
+}
+
+/* Remove the border on the right side of the last item in nav-left */
+.nav-left li:last-child {
+    border-right: none;
+}
+
+/* Remove the border on the left side of the first item in nav-right */
+.nav-right li:first-child {
+    border-left: none;
+}
+
+/* Hover effect */
+.nav-left li:hover, .nav-right li:hover {
+    background-color: #b90e4d; /* Background color on hover */
+}
